@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;400;700&display=swap');
+body{
+    background-color: rgb(30, 30, 30);
+
+}
+*{
+    font-family: 'Sarabun', sans-serif;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-image: url(./img/img5.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 2;
+}
+
+.nav-container ul{
+    display: flex;
+    list-style-type: none;
+    margin: 20px;
+    padding-inline-start: 0;
+    flex-wrap: wrap;
+}
+
+.nav-container ul li{
+    margin: 0px 10px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.theme-container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 20px 0px 5px 0px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+header button{
+    background-color: honeydew;
+    border: none;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+
+.circle-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: aliceblue;   
+    background-image: url(./img/img1.JPG); 
+    background-size: cover;
+    border: solid white 2px;
+  }
+
+  .diff-portrait{
+    width: 100%;
+    height: 850px;
+    z-index: 1;
+    position: absolute;
+    background: rgb(30, 30, 30);
+    background: linear-gradient( rgba(30, 30, 30,1) 0%, rgba(30, 30, 30,0) 30%, rgba(30, 30, 30,0) 70%, rgba(30, 30, 30,1) 100%);
+  }
+
+  .about-me-container{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+      padding-top: 60px;
+      margin: 30px;
+    }
+
+  .about-me-img-text{
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      align-items: center;
+  }
+
+
+ .about-me-img-text p {
+     width: 30%;
+     margin: 20px;
+     line-height: 40px;
+     font-size: 1.3rem;
+ }
+
+
+
+ .about-me-img-text img{
+     width: 500px;
+     margin: 20px;
+ }
+
+  h2{
+      font-size: 1.8rem;
+      font-weight: 600;
+      
+  }
+
+  main{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px;
+
+  }
+
+  .main-category{
+      display: flex;
+      justify-content: center;  
+      margin: 40px;
+      
+  }
+
+  .main-category div{
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .filter-category::before {
+      content: "/";
+      margin: 0px 20px;
+  }
+  .main-gallery{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80%;
+      margin: 40px;
+      }
+
+  .main-gallery img{
+      height: 400px;
+      margin: 10px;
+  }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.form{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.form-text{
+    width: 600px;
+    height: 200px;
+    margin-left: 50px;
+}
