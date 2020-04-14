@@ -166,7 +166,7 @@ header button{
       display: flex;
       justify-content: center;  
       margin: 40px;
-      
+      flex-wrap: wrap;   
   }
 
   .main-category div{
@@ -181,6 +181,7 @@ header button{
       content: "/";
       margin: 0px 20px;
   }
+
   .main-gallery{
       display: flex;
       flex-wrap: wrap;
@@ -190,7 +191,8 @@ header button{
       }
 
   .main-gallery img{
-      height: 400px;
+      max-height: 400px;
+      max-width: 500px;
       margin: 10px;
   }
 
