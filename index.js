@@ -20,7 +20,32 @@ $( document ).ready(function() {
         
 },1000);
 
+slide();
+
 });
+
+
+ function slide() {
+     let currentSlide = 1;
+     let $slidesContainer = $(".slides");
+     let $slides = $slidesContainer.find(".slide");
+     setInterval(() => {
+        $slidesContainer.animate(
+            {"margin-left": "-=1700px"},1500, ()=>{
+                currentSlide ++;
+                if (currentSlide === $slides.length){
+                    currentSlide = 1;
+                    $slidesContainer.css('margin-left', '-40px' );
+                }
+            });
+         
+     }, 4000);
+ }
+
+
+
+
+
 
 $(".nav-container li").hover(function(){
 
@@ -51,28 +76,28 @@ images.forEach(image => {
 
 
 $("#illustration").click(()=>{
-    $(".character").fadeOut();
-    $(".comic").fadeOut();
-    $(".Illustration").fadeIn();
+    $(".character").fadeOut("slow","swing");
+    $(".comic").fadeOut("slow","swing");
+    $(".Illustration").fadeIn("slow","swing");
     
 });
 
 $("#comic").click(()=>{
-    $(".character").fadeOut();
-    $(".Illustration").fadeOut();
-    $(".comic").fadeIn();
+    $(".character").fadeOut("slow","swing");
+    $(".Illustration").fadeOut("slow","swing");
+    $(".comic").fadeIn("slow","swing");
 
 });
 
 $("#character").click(()=>{
-    $(".comic").fadeOut();
-    $(".Illustration").fadeOut();
-    $(".character").fadeIn();
+    $(".comic").fadeOut("slow","swing");
+    $(".Illustration").fadeOut("slow","swing");
+    $(".character").fadeIn("slow","swing");
 
 });
 
 $("#all").click(()=>{
-    $(".character").fadeIn();
-    $(".Illustration").fadeIn();
-    $(".comic").fadeIn();
+    $(".character").fadeIn("slow","swing");
+    $(".Illustration").fadeIn("slow","swing");
+    $(".comic").fadeIn("slow","swing");
 });

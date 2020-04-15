@@ -18,12 +18,27 @@ body{
     flex-direction: column;
     text-align: center;
     height: 100%;
-    background-image: url(./img/img5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin-top: 20px;
 }
+
+.slider{
+    position: absolute;     
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.slides{
+    display: flex;
+    height: 850px;   
+    margin-left: -40px;
+}
+
+.slide{
+    list-style-type: none;
+    height: 850px;
+}
+
 
 .nav-container{
     opacity: 0;
@@ -127,14 +142,16 @@ header button{
 
   .about-me-img-text{
       display: flex;
+      flex-direction: row;
       justify-content: center;
       margin: 20px;
       align-items: center;
+      flex-wrap: wrap;
   }
 
 
  .about-me-img-text p {
-     width: 30%;
+     width: 600px;
      margin: 20px;
      line-height: 40px;
      font-size: 1.3rem;
@@ -208,8 +225,12 @@ footer{
     display: flex;
     margin: 30px;
     justify-content: center;
-    text-align: start;
+    text-align: end;
     align-items: flex-end;
+}
+
+.form input {
+    color: black;
 }
 
 .form-subject :first-child{
@@ -274,10 +295,11 @@ footer{
     fill: white;
 }
 
-.sign{
+.sign , a{
     font-size: 0.7rem;
     color: seashell;
 }
+
 
 
 /*--------------ANIMATIONS--------------*/
