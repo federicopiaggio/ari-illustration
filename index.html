@@ -13,16 +13,20 @@
 
         <div class="diff-portrait"></div>
         <nav class="nav-container">
-            <ul class= "nav-header-left">
-                    <li>Home</li>
-                    <li>About me</li>
-                    <li>Gallery</li>
-                    <li>Contact</li>
-            </ul>
-            <ul id= "nav-header-right">
-                <li>Facebook</li>
-                <li>Instagram</li>
-            </ul>
+            <div class="diff-navbar">
+                <ul class= "nav-header-left">
+                    <li><a class="slide-anchor" href="#header-container">Home</a></li>
+                    <li><a class="slide-anchor" href="#about-me">About me </a></li>
+                    <li><a class="slide-anchor" href="#gallery">Gallery</a></li>
+                    <li><a class="slide-anchor" href="#contact">Contact</a></li>
+                </ul>
+
+                <ul class= "nav-header-right">
+                    <li> <a href="https://www.facebook.com/profile.php?id=100009428924689" target="_blank" >Facebook</a></li>
+                    <li> <a href="https://www.instagram.com/aridecan/?hl=es-la" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            
         </nav>
         
         <div class= "theme-container">
@@ -31,7 +35,7 @@
             <h1>Ariel De Candido</h1>
             <p id="subtitle">Ilustrator and Cartoonist</p>
             </div>
-            <button id="title-button">See my work</button>
+            <a class="slide-anchor" id="title-button" href="#gallery">See my work</a>
         </div>
 
         <div class="slider" id="slider">
@@ -47,7 +51,7 @@
 
     </header>
     
-    <section class="about-me-container">
+    <section id="about-me" class="about-me-container">
         <h2>About Me</h2>
         <div class="about-me-img-text">
             <img src="./img/img2.jpg" alt="">
@@ -56,7 +60,7 @@
     
     </section>
     
-    <main>
+    <main id="gallery">
             <div class="main-category">
                 <div id="all">All</div>
                 <div class="filter-category" id="comic">Comic</div>
@@ -69,24 +73,25 @@
         
     </main>
     
-    <footer>
+    <footer id="contact">
             <h2>Contact</h2>
             <div class="form">
                 <div class="form-subject">
                     <div>Your name</div>
                     <input type="text" >
                     <div>Your e-mail</div>
-                    <input type="text">
+                    <input type="email">
                     <div>Subject</div>
                     <input type="text">  
-                </div> 
+                    
+                </div>  
 
-                <input class="form-text" type="text">  
+                <textarea name="" id="" cols="30" rows="10"></textarea>
 
                 <div class="info">
                     <div class="cell">cel: 154535343</div>
                     <div class="mail">mail: aridecan@gmail.com</div>
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </div>
             </div>
            <div class="sign">Website design and developed by Federico Piaggio - 2020 - <a href="https://github.com/federicopiaggio">https://github.com/federicopiaggio</a></div>

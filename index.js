@@ -62,6 +62,16 @@ $(".nav-container li").hover(function(){
             ,200);
 });
 
+//NAV SLIDING ANCHOR
+
+$(".slide-anchor").click(function(e) {
+    e.preventDefault();
+    var actual = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(actual).offset().top},1500,"swing");
+});
+
+
+
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
   }
