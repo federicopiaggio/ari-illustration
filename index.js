@@ -34,7 +34,7 @@ slide();
      let $slides = $slidesContainer.find(".slide");
      setInterval(() => {
         $slidesContainer.animate(
-            {"margin-left": "-=1700px"},1500, ()=>{
+            {"margin-left": "-=1920px"},1500, ()=>{
                 currentSlide ++;
                 if (currentSlide === $slides.length){
                     currentSlide = 1;

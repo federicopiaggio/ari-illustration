@@ -21,11 +21,13 @@ body{
     height: 100%;
 }
 
-.slider{
-    position: absolute;     
+.slider{  
+    position: absolute;
+    display: flex;
     width: 100%;
     overflow: hidden;
     opacity: 0.5;
+
 }
 
 .slides{
