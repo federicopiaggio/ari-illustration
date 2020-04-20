@@ -86,8 +86,8 @@ shuffle(galleryImages);
 
 galleryImages.forEach(image => {
     
-    $("#container-gallery").append('<a class="'+ image.type + '" href="../img/gallery/' + image.name + '.jpg" data-lightbox="All-lb'+'" data-title=" All ">'
-         + '<img src="../img/gallery/' + image.name + '.jpg">'
+    $("#container-gallery").append('<a class="'+ image.type + '" href="./img/gallery/' + image.name + '.jpg" data-lightbox="All-lb'+'" data-title=" All ">'
+         + '<img src="./img/gallery/' + image.name + '.jpg">'
     + '</a>'
     );
 });
