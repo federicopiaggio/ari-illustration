@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="style.css"><!-- 
+    <link rel="stylesheet" href="gallery.css"> -->
+
+
+
+
 
     <title>Ariel De Candido Portfolio</title>
 </head>
@@ -59,18 +65,20 @@
         </div>
     
     </section>
-    
-    <main id="gallery">
-            <div class="main-category">
-                <div id="all">All</div>
-                <div class="filter-category" id="comic">Comic</div>
-                <div class="filter-category" id="illustration">Illustration</div>
-                <div class="filter-category" id="character">Character</div>
-            </div>
-            <div class="main-gallery">
 
-            </div>
-        
+    <main id="gallery">
+
+        <ul class="main-category">
+            <li class="filter-category active" id="all">All</li>
+            <li class="filter-category" id="comic">Comic</li>
+            <li class="filter-category" id="illustration">Illustration</li>
+            <li class="filter-category" id="character">Character</li>
+        </ul>
+
+        <div id="container-gallery" class="main-gallery">   
+
+        </div>
+
     </main>
     
     <footer id="contact">
@@ -96,12 +104,12 @@
             </div>
            <div class="sign">Website design and developed by Federico Piaggio - 2020 - <a href="https://github.com/federicopiaggio">https://github.com/federicopiaggio</a></div>
     </footer>
-    
-    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script src="imagenes.js"></script>
     <script src="index.js"></script>
 
-
+    
 </body>
 </html>
 

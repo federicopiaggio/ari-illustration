@@ -1,0 +1,45 @@
+
+  
+
+.filters ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+h4 li::before {
+    content: "/";
+    margin-right: 20px ;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h4 li {
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    transition: all 1s ease;
+
+}
+
+h4 li:hover {
+    color: #000;
+    background: #fff;
+    transition: all 1s ease;
+}
+
+h4 li.active {
+    color: #000;
+    background: #fff;
+}
+
+.lightboxOverlay {
+    outline: 0;
+}

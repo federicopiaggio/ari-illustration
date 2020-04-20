@@ -200,6 +200,11 @@ header p {
 
   }
 
+  .filter-category::before {
+    content: "/";
+    margin-right: 20px ;
+}
+
   .main-category{
       display: flex;
       justify-content: center;  
@@ -207,18 +212,26 @@ header p {
       flex-wrap: wrap;   
   }
 
-  .main-category div{
+  .main-category li{
     cursor: pointer;
     font-size: 1.6rem;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
+    list-style-type: none;
+    padding: 5px 20px;
   }
 
-  .filter-category::before {
-      content: "/";
-      margin: 0px 20px;
-  }
+  .main-category li:hover {
+    color: #000;
+    background: #fff;
+    transition: all 1s ease;
+}
+
+.main-category li.active {
+    color: #000;
+    background: #fff;
+}
 
   .main-gallery{
       display: flex;
@@ -233,6 +246,11 @@ header p {
       max-width: 400px;
       margin: 10px;
   }
+
+  .main-gallery a:hover {
+    opacity: 0.5;
+}
+
 
 footer{
     display: flex;
