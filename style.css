@@ -291,11 +291,13 @@ textarea{
     color: black;
 }
 
-.info {
+.info {    
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    /* flex-direction: column; */
+    justify-content: center;
     text-align: start;
+    align-items: center;
+    margin: 40px;
 }
 
 .info button{
